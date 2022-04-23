@@ -1,12 +1,12 @@
-# JarVersionChanger
-A cli tool to change version of jar file .**Note this tool only changes the version related byte and does not change any other part of class file . This tool doesn't backport any bytecode.** This tool is pretty much useless except in some rare occasions like if you want to run a java 11 jar file and you have JRE 8 (This would would work in most cases as most of the language features are implemented at java compiler level. If it uses packages introduced in java 8+ it wont work.).
+# JarVersionChanger ou Trocador de versão de jar
+Uma ferramenta cli para alterar a versão do arquivo jar .**Observe que esta ferramenta altera apenas o byte relacionado à versão e não altera nenhuma outra parte do arquivo de classe . Esta ferramenta não suporta nenhum bytecode.** Esta ferramenta é praticamente inútil, exceto em algumas raras ocasiões, como se você quiser executar um arquivo jar ___java 11___ e tiver o ___JRE 8___ (isso funcionaria na maioria dos casos, pois a maioria dos os recursos da linguagem são implementados no nível do compilador java. Se ele usar pacotes introduzidos no java 8+, **não funcionará**.).
 
-### Usage
+### Como Usar
 ```
 java -jar jar_version_changer-all.jar path_of_jar -major 52
 ```
 
-### Compiling and usage
+### Compilação e uso
 ```
 cd path_of_project
 ./gradlew shadowJar 
