@@ -8,9 +8,16 @@ java -jar jar_version_changer-all.jar path_of_jar -major 52
 ```
 
 ### Compilação e uso :
+- vá para o diretório
 ```
 cd path_of_project
+```
+- construa com o gradlew
+```
 ./gradlew shadowJar 
+```
+- execute com o java
+```
 java -jar  app/build/libs/app-all.jar some_jar_file.jar --major  52
 ```
 ### Creditos :
